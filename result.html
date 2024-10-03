@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liver Disease Prediction Result</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Liver Disease Prediction Result</h1>
+        <p><strong>Age:</strong> {{ age }}</p>
+        <p><strong>Gender:</strong> {{ gender }}</p>
+        <p><strong>Total Bilirubin:</strong> {{ tot_bilirubin }} mg/dL</p>
+        <p><strong>Direct Bilirubin:</strong> {{ direct_bilirubin }} mg/dL</p>
+        <p><strong>Total Proteins:</strong> {{ tot_proteins }} g/dL</p>
+        <p><strong>Albumin:</strong> {{ albumin }} g/dL</p>
+        <p><strong>A/G Ratio:</strong> {{ ag_ratio }}</p>
+        <p><strong>SGPT:</strong> {{ sgpt }} U/L</p>
+        <p><strong>SGOT:</strong> {{ sgot }} U/L</p>
+        <p><strong>Alkaline Phosphatase:</strong> {{ alkphos }} U/L</p>
+        
+        <h2>Prediction</h2>
+        <p>{{ prediction_message }}</p>
+        
+        <h2>Prediction Probability</h2>
+        <p>Probability of having liver disease: {{ probability_disease }}%</p>
+        <p>Probability of not having liver disease: {{ probability_no_disease }}%</p>
+
+        <a href="/">Go Back</a>
+    </div>
+</body>
+</html>
+
+
